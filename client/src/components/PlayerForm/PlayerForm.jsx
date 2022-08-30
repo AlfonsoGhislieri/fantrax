@@ -1,13 +1,25 @@
 import { useState } from "react";
 
-const PlayerForm = () => {
+const PlayerForm = ({ setPlayerArray, playerArray }) => {
   const [name, setName] = useState();
   const [position, setPosition] = useState();
   const [value, setValue] = useState();
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    setPlayerArray([
+      ...playerArray,
+      { name: name, position: position, value: value },
+    ]);
+    setName("");
+    setPosition("");
+    setValue("");
+  };
+
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           value={name}

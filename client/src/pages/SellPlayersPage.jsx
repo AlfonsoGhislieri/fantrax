@@ -35,7 +35,7 @@ const SellPlayersPage = () => {
         <input type="submit" value="Submit" />
       </form> */}
 
-      <PlayerForm />
+      <PlayerForm setPlayerArray={setPlayerArray} playerArray={playerArray} />
     </div>
   );
 };
