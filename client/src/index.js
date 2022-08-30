@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import App from "./App.js";
 import reportWebVitals from "./reportWebVitals";
+import axios from "axios";
+import axiosInstance from "./config/axios/axiosConfig.js";
+// const result = await instance.get("/test");
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

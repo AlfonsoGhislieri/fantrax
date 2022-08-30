@@ -1,4 +1,8 @@
+import instance from "../../config/axios/axiosConfig";
+
 const DisplayPlayers = ({ playerArray }) => {
+  // const result = await instance.get("/test");
+  // console.log(result.data);
   return (
     <div>
       {playerArray &&
