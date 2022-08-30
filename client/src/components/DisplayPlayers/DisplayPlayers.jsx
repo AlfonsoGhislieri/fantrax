@@ -4,8 +4,8 @@ const DisplayPlayers = ({ playerArray }) => {
       {playerArray &&
         playerArray.map((player) => {
           return (
-            <li>
-              {player.name}, {player.position}, {player.value}
+            <li key={player.name}>
+              {player.name}, {player.position}, ${player.value}
             </li>
           );
         })}
