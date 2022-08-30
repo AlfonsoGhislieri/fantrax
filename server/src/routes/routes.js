@@ -1,4 +1,5 @@
 import express from "express";
+import PlayerModel from "../models/player.model.js";
 
 const routes = express();
 
