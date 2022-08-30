@@ -1,8 +1,10 @@
 import mongoose from "mongoose";
 
-const player = new Mongoose.Schema(
-  { name: "string", position: "string", value: "number", owner: "string" },
-  { strict: false }
-);
+const player = new mongoose.Schema({
+  name: "string",
+  position: "string",
+  value: "number",
+  owner: "string",
+});
 
-export default Mongoose.model("Player", player);
+export default mongoose.model("Player", player);
