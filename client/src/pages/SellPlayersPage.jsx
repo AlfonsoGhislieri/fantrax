@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PlayerForm from "../components/PlayerForm/PlayerForm";
+import DisplayPlayers from "../components/DisplayPlayers/DisplayPlayers";
 
 const SellPlayersPage = () => {
   const [password, setPassword] = useState("");
@@ -36,6 +37,7 @@ const SellPlayersPage = () => {
       </form> */}
 
       <PlayerForm setPlayerArray={setPlayerArray} playerArray={playerArray} />
+      <DisplayPlayers playerArray={playerArray} />
     </div>
   );
 };
