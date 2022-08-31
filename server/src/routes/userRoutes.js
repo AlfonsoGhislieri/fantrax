@@ -6,6 +6,8 @@ const routes = express();
 routes.post("/authenticate_user", async (req, res) => {
   const result = await userModel.find({ access_token: req.body.access_token });
 
+  console.log(result);
+
   if (result.length >= 1) {
     return res.json(result[0]);
   } else {
