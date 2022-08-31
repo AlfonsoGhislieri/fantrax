@@ -1,5 +1,8 @@
 import routes from "./routes/routes.js";
 import express from "express";
+import dbConnection from "./db/dbConnection.js";
+
+dbConnection();
 
 const app = express();
 
